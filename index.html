@@ -8,8 +8,11 @@
     <script type="text/javascript" src="js/stack_cards.js"></script>
 </head>
 <body>
+    <style type="text/css">
+        p{width: 200px; background: grey;padding: 4px;}
+    </style>
     <div id="example">
-        <div>
+        <!-- <div>
             <p>
                 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, iure, iusto quia aliquid impedit est ipsa adipisci. Iusto, itaque, nesciunt, perferendis architecto consequuntur dolorem earum distinctio natus ut laboriosam labore.
             </p>
@@ -38,65 +41,24 @@
             <p>
                 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, iure, iusto quia aliquid impedit est ipsa adipisci. Iusto, itaque, nesciunt, perferendis architecto consequuntur dolorem earum distinctio natus ut laboriosam labore.
             </p>
-        </div>
+        </div> -->
+        <div><img src="http://placekitten.com/250/130" alt=""></div>
+        <div><img src="http://placekitten.com/180/130" alt=""></div>
+        <div><img src="http://placekitten.com/200/130" alt=""></div>
+        <div><img src="http://placekitten.com/235/130" alt=""></div>
+        <div><img src="http://placekitten.com/260/130" alt=""></div>
     </div>
 
 
     <script type="text/javascript">
-    $("#example").stackCards();
-
-
-    // var position;
-    // var opacity;
-    // var zindex;
-    // var back;
-
-    // $(document).ready(function() {
-    //     position = [25, 50, 75, 100, 150, 175, 200, 250, 275, 300, 350, 375, 400, 425, 450, 475];
-    //     opacity = 0.90;
-    //     zindex = 100;
-
-    //     refresh(1);
-
-    //     $(".text").click(function()
-    //     {
-    //         opacity = 0.90;
-    //         zindex = 90;
-
-    //         refresh(0);
-
-    //         // $(this).css({"opacity" : 1, "z-index": 100});
-    //         $(this).animate({"opacity" : 1, "z-index": 100}, 50)
-    //                 .removeClass("back");
-    //     });
-    // });
-
-    // function refresh(init)
-    // {
-    //     $(".text").each(function(){
-    //         // $(this).css()
-    //         console.log($(this));
-
-    //         if(init == 1)
-    //         {
-    //             $(this).css({"left" : position[Math.floor(Math.random() * position.length)], "top" : position[Math.floor(Math.random() * position.length)], "opacity" : opacity, "z-index": zindex});
-                
-    //             back = Math.floor(Math.random() * 3);
-                
-    //             $(this).addClass("back back-" + back);
-    //         }
-    //         else
-    //         {
-    //             $(this).css({"opacity" : opacity, "z-index": zindex})
-    //                     .addClass("back");
-    //         }
-
-    //         if(opacity > 0.5)
-    //             opacity -= 0.05;
-
-    //         zindex -= 5;
-    //     });
-    // }
+    $("#example").stackCards({
+        enableOpacity: true,
+        clickCard: function(card, active){
+            console.log("click card custum !");
+            console.log(card);
+            console.log(active);
+        }
+    });
     </script>
 </body>
 </html>

@@ -1,10 +1,10 @@
 .card
 {
-    border: solid black 1px;
-    width: 200px;
+    /*border: solid black 1px;*/
+    /*width: 200px;*/
     padding: 10px;
     position: absolute;
-    background: #A0AC67;
+    /*background: #A0AC67;*/
     text-align: justify;
     cursor: pointer;
     font-size: 16px;
@@ -13,20 +13,56 @@
 div.style.style-0
 {
     font-size: 14px;
-    width: 185px;
-    background: #AA9663;
+    /*width: 185px;*/
+    /*background: #AA9663;*/
 }
 
 div.style.style-1
 {
     font-size: 13px;
-    width: 170px;
-    background: #B99E54;
+    /*width: 170px;*/
+    /*background: #B99E54;*/
 }
 
 div.style.style-2
 {
     font-size: 10px;
-    width: 140px;
-    background: #C2D17C;
+    /*width: 140px;*/
+    /*background: #C2D17C;*/
+}
+
+.rotate0
+{
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5); IE8-*/
+    -ms-transform: rotate(-10deg);
+}
+
+.rotate1
+{
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5); IE8-*/
+    -ms-transform: rotate(10deg);
+}
+
+.rotate2
+{
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);*/ IE8-
+    -ms-transform: rotate(-20deg);
+}
+
+.rotate3
+{
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.5);*/ IE8-
+    -ms-transform: rotate(20deg);
 }

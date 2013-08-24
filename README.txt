@@ -1,0 +1,1 @@
+Stack cards jQuery Plugin by Fabien Beaufreton (fabien@olorin.fr)
