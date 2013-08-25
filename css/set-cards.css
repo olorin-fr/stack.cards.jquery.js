@@ -1,0 +1,21 @@
+.card
+{
+    width: 138px;
+    height: 201px;
+    background: url(../images/1800px-Svg-cards-2.0.svg.png);
+    padding: 0px;
+}
+
+.club-1{ background-position: 0 0;}
+.club-2{ background-position: -139px 0;}
+.club-3{ background-position: -277px 0;}
+.club-4{ background-position: -415px 0;}
+.club-5{ background-position: -554px 0;}
+.club-6{ background-position: -692px 0;}
+.club-7{ background-position: -831px 0;}
+.club-8{ background-position: -969px 0;}
+.club-9{ background-position: -1108px 0;}
+.club-10{ background-position: -1246px 0;}
+.club-jack{ background-position: -1384px 0;}
+.club-queen{ background-position: -1523px 0;}
+.club-king{ background-position: -1661px 0;}

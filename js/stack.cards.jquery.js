@@ -74,7 +74,7 @@
             var id_style = Math.floor(Math.random() * 3);
 
             if(o.enableRotation)
-                rotate = "rotate"+Math.floor(Math.random() * 3);
+                rotate = "rotate"+Math.floor(Math.random() * 6);
 
             $m_card.addClass("card style style-" + id_style + " "+ rotate);
         };
