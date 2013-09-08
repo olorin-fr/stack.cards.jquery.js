@@ -10,7 +10,8 @@
 </head>
 <body>
     <style type="text/css">
-        p{width: 200px; background: grey;padding: 4px;}
+        p{padding: 4px;}
+        #example{border: solid black 1px;}
     </style>
     <div id="example">
         <!-- <div>
@@ -45,41 +46,56 @@
         </div> -->
 
 
-        <!-- <div><img src="http://placekitten.com/250/130" alt=""></div>
+        <!-- div><img src="http://placekitten.com/400/200" alt=""></div>
         <div><img src="http://placekitten.com/180/130" alt=""></div>
         <div><img src="http://placekitten.com/200/130" alt=""></div>
         <div><img src="http://placekitten.com/235/130" alt=""></div>
-        <div><img src="http://placekitten.com/260/130" alt=""></div> -->
+        <div><img src="http://placekitten.com/350/100" alt=""></div>
+        <div><img src="http://placekitten.com/320/180" alt=""></div>
+        <div><img src="http://placekitten.com/280/130" alt=""></div>
+        <div><img src="http://placekitten.com/200/180" alt=""></div>
+        <div><img src="http://placekitten.com/340/130" alt=""></div>
+        <div><img src="http://placekitten.com/200/200" alt=""></div> -->
 
-        <div class="card club-1"></div>
-        <div class="card club-jack"></div>
-        <div class="card club-queen"></div>
-        <div class="card club-king"></div>
-        <div class="card club-2"></div>
-        <div class="card club-3"></div>
-        <div class="card club-4"></div>
-        <div class="card club-5"></div>
-        <div class="card club-6"></div>
-        <div class="card club-7"></div>
-        <div class="card club-8"></div>
-        <div class="card club-9"></div>
-        <div class="card club-10"></div>
+        <div class="card club-1 back"></div>
+        <div class="card club-jack back"></div>
+        <div class="card club-queen back"></div>
+        <div class="card club-king back"></div>
+        <div class="card club-2 back"></div>
+        <div class="card club-3 back"></div>
+        <div class="card club-4 back"></div>
+        <div class="card club-5 back"></div>
+        <div class="card club-6 back"></div>
+        <div class="card club-7 back"></div>
+        <div class="card club-8 back"></div>
+        <div class="card club-9 back"></div>
+        <div class="card club-10 back"></div>
     </div>
-
+    <p>Click to up card in stack, click again to flip</p>
 
     <script type="text/javascript">
     $("#example").stackCards({
+        // mode: "random",
         enableOpacity: false,
         enableRotation: true,
         width: 600,
         height: 600,
         clickCard: function($card, active){
-            console.log("click card custum !");
+            console.log("click card custom !");
             console.log($card);
             console.log(active);
 
             if(active)
-                $card.remove();
+            {
+                // $card.remove();
+                $card.removeClass('back');
+            }
+                
+        },
+        hoverCard: function($card){
+            console.log("hover card custom !");
+            $(".card").addClass('back');
+            $card.removeClass("back");               
         }
     });
     </script>
